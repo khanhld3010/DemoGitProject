@@ -1,16 +1,28 @@
 
-form{
-    width: 100%;
-}
-
-
-span{
-    color: blue;
-}
-
 .SimpleForm2{
-
     background-color: rgba(255, 255, 0, 0.38);
-    width: 70%;
+    width: 30%;
+}
+.SimpleForm2 span{
+    color: red;
+}
 
+
+.SimpleForm3{
+    width: 30%;
+    background: lightskyblue;
+
+}
+
+.SimpleForm3 h1{
+    text-align: center;
+    color: white;
+    background: orangered;
+}
+
+.SimpleForm3 table{
+    background: white;
+}
+.SimpleForm3 span{
+    text-align: right;
 }
