@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="CSS/SimpleForm.css" rel="stylesheet" type="text/css">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="Schedule.html" method="get">
+    <h1>
+        <span>Sở thích của bạn</span>
+    </h1>
+    <table>
+        <tr>
+            <td>
+                <span>Họ và tên</span>
+            </td>
+            <td>
+                <label>
+                    <input type="text" name="yourname"/>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span>Email</span>
+            </td>
+            <td>
+                <label>
+                    <input type="email" name="email"/>
+                </label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <span>Sở thích</span>
+            </td>
+            <td>
+                <label>
+                    <input type="checkbox" name="hobby" value="sport"/>
+                </label> Thể thao
+                <label>
+                    <input type="checkbox" name="hobby" value="music"/>
+                </label> Âm nhạc
+                <label>
+                    <input type="checkbox" name="hobby" value="book"/>
+                </label> Đọc sách
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label>
+                    <input type="checkbox" name="hobby" value="web"/>
+                </label> Lướt web
+                <label>
+                    <input type="checkbox" name="hobby" value="game"/>
+                </label> Chơi game
+                <label>
+                    <input type="checkbox" name="hobby" value="movie"/>
+                </label> Điện ảnh
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label>
+                    <input type="checkbox" name="hobby" value="vacation"/>
+                </label> Du lịch
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <label>
+                    <button type="submit" value="submit">Gửi thông tin</button>
+                </label>
+                <label>
+                    <button type="reset" value="reset">Nhập lại</button>
+                </label>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+<form method="get" action="Schedule.html" class="SimpleForm2">
+    <h1 style="color: blue; background: cadetblue">ĐĂNG KÝ HỌC VIÊN</h1>
+    <table>
+        <tr>
+            <td>
+                <span>Họ và tên: </span>
+            </td>
+            <td>
+                <label>
+                    <input type="text" name="fullName"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Ngày sinh:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <input type="date" name="birthday"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Giới tính:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="gender" value="male"/>
+                </label> Nam
+                <label>
+                    <input type="radio" name="gender" value="female"/>
+                </label> Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Địa chỉ:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <textarea cols="30" rows="10" name="address"></textarea>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Lớp:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <select>
+                        <option value="null"> --chọn lớp--</option>
+                        <option value="Java"> Lớp Java</option>
+                        <option value="AWS"> Lớp Cloud</option>
+                        <option value="Node"> Lớp NodeJS</option>
+                        <option value="Python"> Lớp Python</option>
+                    </select>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Email:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <input type="email" name="email"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>
+                    Điện thoại:
+                </span>
+            </td>
+            <td>
+                <label>
+                    <input type="tel" name="phone"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <label>
+                    <button type="submit" value="submit" >Đăng Ký </button>
+                </label>
+                <label>
+                    <button type="reset" value="reset" >Nhập lại </button>
+                </label>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+
+
+
+</body>
+</html>
