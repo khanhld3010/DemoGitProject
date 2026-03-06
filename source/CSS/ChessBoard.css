@@ -1,0 +1,23 @@
+.board {
+    /*width: 100%;*/
+    table-layout: fixed; /* Ép các ô tuân thủ đúng kích thước đã chia */
+    border-collapse: collapse;
+    background: yellow;
+}
+.board td, th {
+    /*width: 100%;*/
+    width: 50px;  /* Chiều rộng cố định */
+    height: 50px;
+    border: 1px solid black;
+
+}
+.board td {
+         /*height: 40px;=*/
+        /* Đảm bảo ô không bị co lại khi trống */
+        overflow: hidden;
+    background: black;
+}
+
+.oddRow {
+
+}
