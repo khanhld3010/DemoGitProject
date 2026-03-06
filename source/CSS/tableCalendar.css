@@ -1,0 +1,42 @@
+.tableCalendar {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Tạo ô vuông bằng cách cố định chiều cao */
+.tableCalendar th, .tableCalendar td {
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    height: 80px; /* Điều chỉnh con số này để ô vuông hơn */
+    position: relative;
+}
+
+/* Màu sắc hàng tiêu đề Tiếng Việt */
+.days-vn th {
+    color: white;
+    padding: 10px 0;
+}
+.days-vn th.sun { background-color: #ff3300; } /* Màu đỏ Chủ Nhật */
+.days-vn th:not(.sun):not(.sat) { background-color: #ffcc00; } /* Màu vàng các thứ khác */
+.days-vn th.sat { background-color: #0033ff; } /* Màu xanh Thứ Bảy */
+
+/* Màu chữ cho hàng Tiếng Anh và dữ liệu cột */
+.sun { color: red; }
+.sat { color: blue; }
+
+/* Định dạng số ngày âm (số nhỏ phía dưới) */
+td span {
+    font-size: 0.7em;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #333;
+}
+
+/* Cố định ô vuông kể cả khi trống */
+td:empty::before {
+    content: "\00a0"; /* Ký tự trắng để giữ chiều cao */
+}
