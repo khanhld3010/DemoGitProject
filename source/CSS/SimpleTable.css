@@ -1,0 +1,34 @@
+.SimpleTable {
+    border-collapse: separate;
+
+    width: 100%;
+}
+.SimpleTable th {
+    background: yellow;
+}
+.SimpleTable td,th {
+    border: 1px solid black;
+}
+
+.TableRow2 {
+    background: orange;
+}
+.TableRow2 td {
+    text-align: center;
+}
+
+.HeaderTable {
+    width: 100%;
+    color: blue;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng trên mobile */
+}
+
+.col-6 {
+    flex: 0 0 50%; /* Chiếm đúng 50% chiều rộng */
+    max-width: 100%;
+}
+
